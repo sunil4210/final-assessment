@@ -36,8 +36,8 @@ This project is an Android application developed as part of the NIT3213 course a
   - Request Body:
     ```json
     {
-      "username": "YourFirstName",
-      "password": "sYourStudentID"
+      "username": "firstName",
+      "password": "studentID"
     }
     ```
 - **Dashboard Endpoint**:
