@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBar with Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/exerciseNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Exercise Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/equipmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/muscleGroupTextView"
+        android:layout_marginTop="12dp"
+        android:text="Equipment"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/muscleGroupTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/muscleGroupTextView"
+        app:layout_constraintTop_toBottomOf="@+id/muscleGroupTextView" />
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/equipmentTextView"
+        android:layout_marginTop="12dp"
+        android:text="Difficulty"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/equipmentTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/equipmentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/equipmentTextView" />
+
+    <TextView
+        android:id="@+id/caloriesBurnedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/difficultyTextView"
+        android:layout_marginTop="8dp"
+        android:text="Calories Burned"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/difficultyTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/difficultyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyTextView" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caloriesBurnedTextView"
+        android:layout_marginTop="24dp"
+        android:text="Description"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/caloriesBurnedTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caloriesBurnedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesBurnedTextView" />
+
+    <TextView
+        android:id="@+id/muscleGroupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseNameTextView"
+        android:layout_marginTop="4dp"
+        android:text="Muscle Group"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/exerciseNameTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/exerciseNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
